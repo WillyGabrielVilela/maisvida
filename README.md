@@ -1,5 +1,5 @@
 <h1 align="center">
-  NutriLab - PyStack Week 4.0
+  MaisVida - Gerenciamento de pacientes para nutricionistas
 </h1>
 <p align="center">
   <a href="#tecnologias-e-práticas-utilizadas">Tecnologias e práticas utilizadas</a> •
@@ -12,10 +12,10 @@ Aplicação para nutricionistas e pacientes.
 Desenvolvida uma aplicação completa para nutricionistas gerenciarem seus pacientes.
 
 ## Tecnologias e práticas utilizadas
-- Python 3.8
-- Django 4.2
+- Python 
+- Django 
 - SQLite
-- Arquitetura MVT
+- Arquitetura MVC
 
 ## Funcionalidades
 - Autenticação, Cadastro e Ativação de Usuários
