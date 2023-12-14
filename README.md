@@ -1,86 +1,46 @@
 <h1 align="center">
   MaisVida - Gerenciamento de pacientes para nutricionistas
 </h1>
-<p align="center">
-  <a href="#tecnologias-e-práticas-utilizadas">Tecnologias e práticas utilizadas</a> •
-  <a href="#funcionalidades">Funcionalidades</a> •
-  <a href="#comandos">Comandos</a>
-</p>
 
-Aplicação para nutricionistas e pacientes.
+<img src="gifgithub/gifmaisvida.gif"
 
-Desenvolvida uma aplicação completa para nutricionistas gerenciarem seus pacientes.
+## Aplicação
+Aplicação que consiste em um gerenciamento de pacientes para nutricionistas, podendo cadastrar pacientes cadastrar informações e metricas de saúde indicar planos alimentares.
 
 ## Tecnologias e práticas utilizadas
 - Python 
 - Django 
 - SQLite
-- Arquitetura MVC
+- Templates(Front-end): HTML, CSS e Javascript
+- Arquitetura MVC Model View Controller
 
 ## Funcionalidades
-- Autenticação, Cadastro e Ativação de Usuários
-- Gestão de Pacientes, seus Dados Laboratoriais e seus Planos Alimentares
+- Cadastro dos nutricionistas
+- Login dos nutricionistas
+- Envio de e-mail para confirmar cadastro
+# Dentro da plataforma:
+- Cadastro de pacientes com informações:
+ Sexo, idade, email e telefone
+- Adição de metricas dos pacientes:
+peso, altura, percentual de gordura, percentual de musculos, indeces de colesterol e trigliceridios
+- Adição de refeições para cada paciente indicando o que comer em cada refeição assim como hora e uma imagem ilustrativa
+- Acompanhamento do progresso do paciente por meio de um grafico
 
-###
+## Vantagens das Tecnologias
+# Python com Django:
+- Facil aprendizado e adoção no projeto
+- Django é um framework que facilita bastante a implementação
+- Area administrativa completa
+- Facilidade em trocar o banco, com apenas algumas alterações é possivel fazer a portabilidade
+- Não ter Node_Modules :)
+# Banco de dados: SQLite
+Facilidade na implementação
 
-![alt text](https://raw.githubusercontent.com/samuel-oldra/NutriLab/main/README_IMGS/cadastre-se.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/NutriLab/main/README_IMGS/logar.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/NutriLab/main/README_IMGS/gerenciar_pacientes.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/NutriLab/main/README_IMGS/novo_paciente.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/NutriLab/main/README_IMGS/dados_dos_pacientes.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/NutriLab/main/README_IMGS/dados_do_paciente.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/NutriLab/main/README_IMGS/dados_do_paciente_detalhes.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/NutriLab/main/README_IMGS/plano_alimentar_paciente.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/NutriLab/main/README_IMGS/adicionar_refeicao.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/NutriLab/main/README_IMGS/adicionar_opcao.png)
+## Desvantagens das Tecnologias
+- Python por ser de tipagem dinamica pode ocorrer alguns problemas que será dificil identificar
+- Django é mais pesado e menos performatico que outros frameworks, como por exemplo Flask
+- SQLite, não é tão recomendado para ambientes de produção, bancos como PostgreSQL são mais recomendados por serem mais robustos
 
 ## Comandos
 
-### pip
-```
-pip list --outdate
-pip install --upgrade pip setuptools Django ...
-```
-
-### virtualenv (windows)
-```
-python -m venv env
-env\Scripts\activate.bat
-env\Scripts\deactivate.bat
-```
-
-### Instalar bibliotecas, gravar/instalar requerimentos
-```
-(env) pip install Django
-(env) pip install Pillow
-
-(env) pip freeze > requirements.txt
-(env) pip install -r requirements.txt
-```
-
-### Criar projeto
-```
-(env) django-admin startproject nutrilab .
-```
-
-### Criar super user (Django Administration)
-```
-(env) python manage.py createsuperuser (admin/admin)
-```
-
-### Criar apps
-```
-(env) python manage.py startapp autenticacao
-(env) python manage.py startapp plataforma
-```
-
-### Migrations
-```
-(env) python manage.py makemigrations
-(env) python manage.py migrate
-```
-
-### Executar projeto
-```
-(env) python manage.py runserver
-```
+python manage.py runserver
