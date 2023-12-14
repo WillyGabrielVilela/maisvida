@@ -2,7 +2,7 @@
   MaisVida - Gerenciamento de pacientes para nutricionistas
 </h1>
 
-<img src="gifgithub/gifmaisvida.gif"
+<img src="gifgithub/gifmaisvida.gif">
 
 ## Aplicação
 Aplicação que consiste em um gerenciamento de pacientes para nutricionistas, podendo cadastrar pacientes cadastrar informações e metricas de saúde indicar planos alimentares.
